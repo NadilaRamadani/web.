@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cerita Idul Fitri - Nadila Ramadani</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+/* background bintang */
+.stars{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+background-image:
+radial-gradient(white 1px, transparent 1px),
+radial-gradient(white 1px, transparent 1px);
+background-size:60px 60px;
+background-position:0 0,30px 30px;
+opacity:0.2;
+animation:moveStars 40s linear infinite;
+z-index:-1;
+}
+
+@keyframes moveStars{
+from{transform:translateY(0);}
+to{transform:translateY(-200px);}
+}
+
+/* header */
+.page-header{
+text-align:center;
+padding:70px 20px 30px;
+}
+
+.page-header h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.page-header p{
+opacity:0.9;
+}
+
+/* container */
+.cerita-container{
+max-width:800px;
+margin:auto;
+padding:30px;
+}
+
+/* card cerita */
+.cerita-card{
+background:white;
+color:#1e293b;
+padding:40px;
+border-radius:25px;
+box-shadow:0 20px 40px rgba(0,0,0,0.2);
+animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.cerita-date{
+background:#fbbf24;
+padding:8px 18px;
+border-radius:30px;
+display:inline-block;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+.cerita-card h2{
+font-size:2rem;
+margin-bottom:10px;
+}
+
+.cerita-lead{
+color:#fbbf24;
+font-weight:bold;
+font-size:1.2rem;
+margin-bottom:20px;
+}
+
+.cerita-card p{
+line-height:1.8;
+font-size:1.1rem;
+margin-bottom:18px;
+}
+
+.cerita-quote{
+background:#fef3c7;
+border-left:6px solid #fbbf24;
+padding:25px;
+border-radius:15px;
+font-style:italic;
+margin:30px 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<nav class="navbar">
+<div class="container">
+
+<a href="index.html" class="logo">
+<i class="bi bi-moon-stars-fill"></i>
+Nadila Ramadani
+</a>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+</ul>
+
+</div>
+</nav>
+
+<div class="page-header">
+<h1><i class="bi bi-book"></i> Cerita Idul Fitri</h1>
+<p>Pengalaman saya saat merayakan hari kemenangan</p>
+</div>
+
+<section class="cerita-container">
+
+<div class="cerita-card">
+
+<div class="cerita-date">
+<i class="bi bi-calendar"></i> 20 Maret 2026
+</div>
+
+
+<p>
+Pada pagi hari Idul Fitri,Suasana pagi terasa tenang dan terdengar suara takbir dari masjid yang membuat hati terasa senang ,Setelah bersiap dan memakai pakaian terbaik saya berkumpul bersama keluarga di rumah
+</p>
+
+<p>
+Sebelum berangkat ke masjid, kami saling bersalaman dan meminta maaf satu sama lain,Saya meminta maaf kepada orang tua atas kesalahan yang pernah saya lakukan.
+</p>
+
+<p>
+Setelah itu, saya dan keluarga pergi ke masjid untuk melaksanakan sholat Idul Fitri bersama masyarakat sekitar.
+</p>
+
+<p>
+Setelah sholat selesai, kami pulang ke rumah dan menikmati makanan seperti ketupat dan rendang dan makanan lainnya bersama keluarga.
+</p>
+
+<p>
+Pada siang harinya, saya juga pergi bersama teman-teman untuk bersilaturahmi ke rumah tetangga dan menikmati suasana hari raya bersama.
+</p>
+</section>
+
+<footer class="footer">
+<div class="container">
+
+<div class="social-icons">
+<a href="#"><i class="bi bi-instagram"></i></a>
+<a href="#"><i class="bi bi-facebook"></i></a>
+<a href="#"><i class="bi bi-youtube"></i></a>
+<a href="#"><i class="bi bi-tiktok"></i></a>
+</div>
+
+<p>© 2026 Nadila Ramadani - Selamat Hari Raya Idul Fitri</p>
+
+</div>
+</footer>
+
+</body>
+</html>

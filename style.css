@@ -1,0 +1,293 @@
+/* ===== VARIABLES ===== */
+:root{
+    --primary:#065f46;
+    --secondary:#047857;
+    --gold:#fbbf24;
+    --cream:#fef3c7;
+    --light:#f8fafc;
+}
+
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    background:#ecfdf5;
+    padding-top:70px;
+    font-size:16px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    background:linear-gradient(135deg,#065f46,#047857);
+    padding:12px 0;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 20px rgba(0,0,0,0.2);
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo i{
+    color:var(--gold);
+    font-size:24px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    padding:6px 15px;
+    border-radius:50px;
+    transition:0.3s;
+    font-size:14px;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    background:var(--gold);
+    color:var(--primary);
+    transform:translateY(-2px);
+}
+
+/* ===== HERO / HOME ===== */
+.hero{
+    height:90vh;
+    background:
+        linear-gradient(rgba(6,95,70,0.75), rgba(4,120,87,0.75)),
+        url("https://images.unsplash.com/photo-1584551246679-0daf3d275d0f") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero-content h1{
+    font-size:2.5rem;
+    margin-bottom:20px;
+    font-weight:bold;
+    color:white;
+    text-shadow:3px 3px 10px rgba(0,0,0,0.8);
+}
+
+.hero-content .gold{
+    color:var(--gold);
+    display:block;
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.hero-content p{
+    font-size:1rem;
+    color:white;
+    margin-bottom:25px;
+    line-height:1.6;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.8);
+}
+
+/* ===== BUTTON ===== */
+.btn{
+    display:inline-block;
+    padding:10px 25px;
+    background:var(--gold);
+    color:var(--primary);
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    margin:10px;
+    transition:0.3s;
+    font-size:14px;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    background:#facc15;
+}
+
+/* ===== GRID FOTO ===== */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+/* CARD FOTO */
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:20px;
+}
+
+.card-body h3{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+.card-body p{
+    color:#64748b;
+}
+
+/* ===== VIDEO GRID ===== */
+.video-grid {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: flex-start; /* scroll mulai dari kiri */
+    flex-wrap: nowrap;           /* tetap horizontal */
+    overflow-x: auto;            /* scroll horizontal */
+    scroll-behavior: smooth;
+}
+
+/* CARD VIDEO */
+.video-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    min-width: 300px; /* lebar card */
+    flex: 0 0 auto;    /* tetap horizontal */
+}
+
+.video-card:hover {
+    transform: translateY(-10px);
+}
+
+/* VIDEO DI DALAM CARD */
+.video-card video {
+    width: 100%;
+    height: 250px;     /* ukuran sedang */
+    object-fit: cover;
+    display: block;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* FULLSCREEN VIDEO */
+video:fullscreen {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain; /* tetap proporsional */
+}
+
+/* ===== FOOTER ===== */
+.footer{
+    background:linear-gradient(135deg,#065f46,#047857);
+    color:white;
+    padding:40px 0 20px;
+    margin-top:80px;
+    text-align:center;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin:25px 0;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer-links a:hover{
+    color:var(--gold);
+}
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:15px;
+}
+
+.social-icons a{
+    color:white;
+    font-size:22px;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    color:var(--gold);
+    transform:scale(1.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero-content h1{
+        font-size:1.8rem;
+    }
+
+    .hero-content .gold{
+        font-size:1.5rem;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .video-grid{
+        flex-wrap: nowrap; /* tetap horizontal di HP */
+    }
+
+    .video-card video{
+        height:200px;
+    }
+}
